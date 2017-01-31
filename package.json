@@ -19,7 +19,11 @@
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-usemin": "^0.3.28"
+    "gulp-clean-css": "^2.3.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-usemin": "^0.3.28",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
   },
   "dependencies": {
     "bootstrap": "^3.3.7"
