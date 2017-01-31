@@ -10,6 +10,6 @@
   ```
   npm install
   gulp
-  cd dist
   python -m SimpleHTTPServer
   ```
+  visit localhost:8000 and click on dist or src
