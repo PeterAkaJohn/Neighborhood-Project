@@ -157,6 +157,9 @@ var Location = function(data) {
     this.favorite = ko.observable(false);
 };
 
+/**
+ * @description Knockout ViewModel
+ */
 var ViewModel = function() {
     var self = this;
 
