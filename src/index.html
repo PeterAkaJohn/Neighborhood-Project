@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood</title>
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- endbuild -->
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" data-bind="click: toggleSidebar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+              </a>
+          </div>
+      </div>
+  </nav>
+  <div class="container-fluid content">
+    <div class="row">
+      <div class="sidebar" id="sidebar" data-bind="visible: showSidebar">
+        <div class="row">
+          <div class="filter-box text-center">
+            <input class="filter" placeholder="Filter" data-bind="value: filterLocations, valueUpdate: 'afterkeydown', css: 'filter'" />
+          </div>
+          <div class="col-xs-12 locations-container" data-bind="foreach: filteredList">
+            <a href="#" class="no-decoration" data-bind="click: $parent.setCurrentLocation">
+              <div class="locationBox text-center">
+                <h3 data-bind="text: title"></h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 map-column">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+  <!-- build:js js/main.js -->
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8tzpj54ynjNrwKLW0C1bzVaaHrcuG37g&libraries=places&callback=initMap">
+    </script>
+
+</body>
+</html>

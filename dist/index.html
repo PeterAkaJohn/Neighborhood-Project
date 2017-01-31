@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cat Clicker</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Neighborhood</title>
+    <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -25,9 +24,11 @@
             <input class="filter" placeholder="Filter" data-bind="value: filterLocations, valueUpdate: 'afterkeydown', css: 'filter'" />
           </div>
           <div class="col-xs-12 locations-container" data-bind="foreach: filteredList">
-            <div class="locationBox text-center">
-              <h3 data-bind="click: $parent.setCurrentLocation, text: title"></h3>
-            </div>
+            <a href="#" class="no-decoration" data-bind="click: $parent.setCurrentLocation">
+              <div class="locationBox text-center">
+                <h3 data-bind="text: title"></h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -36,22 +37,10 @@
       </div>
     </div>
   </div>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <script src="js/lib/knockout-3.2.0.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8tzpj54ynjNrwKLW0C1bzVaaHrcuG37g&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8tzpj54ynjNrwKLW0C1bzVaaHrcuG37g&libraries=places&callback=initMap">
     </script>
 
 </body>
 </html>
-
-<!-- <div class="sidebar">
-  <input placeholder="Filter" data-bind="value: filterLocations, valueUpdate: 'afterkeydown'" />
-  <ul id="location-list" data-bind="foreach: filteredList">
-    <li data-bind="click: $parent.setCurrentLocation, text: title"></li>
-  </ul>
-</div> -->

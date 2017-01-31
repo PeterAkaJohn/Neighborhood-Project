@@ -35,9 +35,14 @@ body {
 }
 
 .locationBox {
-    min-height: 2em;
-    margin-bottom: 2em;
+    min-height: 3em;
     border-bottom: 1px solid white;
+    padding-top: 1em;
+}
+
+.locationBox:hover, .locationBox:focus, .locationBox:active {
+  background-color: #8a8a8a;
+  color: black;
 }
 
 .sidebar {
@@ -48,6 +53,7 @@ body {
     color: white;
     min-width: 20%;
     background-color: #30383B;
+    overflow-y: scroll;
 }
 
 .filter {
@@ -96,4 +102,37 @@ body {
   .sidebar {
     width: 80%;
   }
+}
+
+.no-decoration, .no-decoration:hover, .no-decoration:active, .no-decoration:visited, .no-decoration:focus {
+    text-decoration:none !important;
+    color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.infoWindow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infoWindow-image {
+  width: 40%;
+  padding-top: 1em;
+}
+
+.infoWindow-body {
+  width: 60%;
 }
