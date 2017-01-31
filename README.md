@@ -6,7 +6,7 @@
 
 # Usage:
 
-* have `gulp` installed!!!
+* have `gulp` and `npm` installed!!!
 
 * open the command line in the directory and run:
   ```
