@@ -14,4 +14,4 @@
   gulp
   python -m SimpleHTTPServer
   ```
-  visit localhost:8000 and click on dist or src
+  visit localhost:8000 and click on dist for production folder or src for development folder as instructed in the rubric
