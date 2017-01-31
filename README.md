@@ -6,6 +6,8 @@
 
 # Usage:
 
+* have `gulp` installed!!!
+
 * open the command line in the directory and run:
   ```
   npm install
