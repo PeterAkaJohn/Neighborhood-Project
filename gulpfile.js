@@ -2,7 +2,6 @@ var gulp = require('gulp'),
   cleanCSS = require('gulp-clean-css'),
   jshint = require('gulp-jshint'),
   stylish = require('jshint-stylish'),
-  uglify = require('gulp-uglify'),
   usemin = require('gulp-usemin'),
   del = require('del');
 
