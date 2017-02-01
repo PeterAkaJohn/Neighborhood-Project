@@ -26,21 +26,29 @@ body {
     margin-top: 0;
 }
 
+.main-content {
+  height: 100%;
+  width: 100%;
+}
+
 .row {
     height: 100%;
 }
 
-.col-xs-12, .col-sm-4, .col-sm-8, .sidebar {
+.col-xs-12,
+.col-sm-4,
+.col-sm-8,
+.sidebar {
     height: 100%;
 }
 
-.locationBox {
+.location-box {
     min-height: 3em;
     border-bottom: 1px solid white;
     padding-top: 1em;
 }
 
-.locationBox:hover, .locationBox:focus, .locationBox:active {
+.location-box:hover, .location-box:focus, .location-box:active {
   background-color: #8a8a8a;
   color: black;
 }

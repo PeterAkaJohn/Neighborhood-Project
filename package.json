@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/PeterAkaJohn/Neighborhood-Project#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.7",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.3.2",
